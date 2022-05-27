@@ -1,0 +1,141 @@
+// Обнуление
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+// Подключение шрифтов
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('./src/fonts/VisueltPro-Medium.eot');
+    src: local('VisueltPro-Medium'),
+        url('./src/fonts/VisueltPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./src/fonts/VisueltPro-Medium.woff2') format('woff2'),
+        url('./src/fonts/VisueltPro-Medium.woff') format('woff'),
+        url('./src/fonts/VisueltPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visuelt Pro';
+    src: url('./src/fonts/VisueltPro-Regular.eot');
+    src: local('VisueltPro-Regular'),
+        url('./src/fonts/VisueltPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./src/fonts/VisueltPro-Regular.woff2') format('woff2'),
+        url('./src/fonts/VisueltPro-Regular.woff') format('woff'),
+        url('./src/fonts/VisueltPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Visuelt Pro";
+	font-weight: normal;
+	font-style: normal;
+    font-size: 16px;
+}
+
+// Переменные
+$width-1: 1300px;
+$width-2: 1150px;
+$width-3: 720px;
+$width-4: 425px;
+
+// Остальное
+body {
+	padding: 24px;
+	@media (max-width:$width-2) {
+		padding: 0;
+	}
+	background: rgba(0,0,0,0.1);
+}
+
+.body {
+		&_lock {
+			overflow: hidden;
+		}
+}
+
+.wrapper {
+	max-width: 1392px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.65);
+	border-radius: 24px;
+	@media (max-width: $width-2) {
+		border-radius: 0;
+	}
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 24px;
+	background: #FFFFFF;
+	border-radius: 16px;
+	font-size: 18px;
+	line-height: 135%;
+	color: #4754EB;
+	transition: all 0.2s;
+	&:hover {
+		padding-top: 8px;
+		padding-bottom: 12px;
+		box-shadow: 0px 24px 24px rgba(80, 93, 236, 0.25);
+	}
+	&_blue {
+		background: #4754EB;
+		color: #FFFFFF;
+		&:hover {
+			background: #505DEC;
+		}
+    }
+	&_big {
+		padding: 12px 24px;
+		&:hover {
+			padding: 10px 24px 14px;
+		}
+	}
+}
+
+.header-1 {
+	font-size: 36px;
+	line-height: 112%;
+	color: #1A1A1A;
+	@media (max-width:$width-3) {
+		font-size: 18px;
+		line-height: 125%;
+	}
+}

@@ -1,0 +1,37 @@
+@import "settings";
+
+@import "header";
+
+@import "login";
+
+@import "terms";
+
+@import "welcome";
+
+@import "benefits";
+
+@import "howworking";
+
+@import "ourrates";
+
+@import "reviews";
+
+@import "sale";
+
+@import "questions";
+
+@import "feedback";
+
+@import "footer";
+
+html[lang="ru"] [lang="eng"] {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+html[lang="eng"] [lang="ru"] {
+    display: none;
+    margin: 0;
+    padding: 0;
+}

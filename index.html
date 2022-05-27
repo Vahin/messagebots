@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Messagebots</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <a href="#" class="header__menu menu"><span class="menu__line"></span></a>
+                <a href="#" class="header__logo logo" data-link="welcome">Messagebots</a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list" lang="ru">
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="benefits">О компании</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="ourrates">Тарифы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="reviews">Отзывы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="questions">Q&A</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="feedback">Обратная связь</a></li>
+                    </ul>
+                    <ul class="nav__list" lang="eng">
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="benefits">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="ourrates">Rates</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="reviews">Reviews</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="questions">Q&A</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-link="feedback">Feedback</a></li>
+                    </ul>
+                    <ul class="header__lang lang">
+                        <li class="lang__item lang__item_active"><a href="#" class="lang__link" data-lang-switch="ru">Ru</a></li>
+                        <li class="lang__item"><a href="#" class="lang__link" data-lang-switch="eng">Eng</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="header__auth button button_blue button_big" data-modal="logreg" lang="ru">Вход и регистрация</a>
+                <a href="#" class="header__auth button button_blue button_big" data-modal="logreg" lang="eng">Login</a>
+            </header>
+
+            <section class="logreg">
+                <div class="logreg__container logreg__container_show">
+                    <div class="logreg__top">
+                        <span class="logreg__logo logo" lang="ru">Messagebots - Вход</span>
+                        <span class="logreg__logo logo" lang="eng">Messagebots - Login</span>
+                        <form action="POST" class="logreg__form form">
+                            <div class="logreg__form-wrap">
+                                <div class="logreg__input-wrap">
+                                    <div class="selling__wrong form__wrong form__wrong_mail" data-lang="Not correct e-mail">Не корректный e-mail</div>
+                                    <input type="text" class="logreg__name form__mail" placeholder="Введите почту" data-lang="Input e-mail" />
+                                </div>
+                                <input type="password" class="logreg__password" placeholder="Введите пароль" data-lang="Enter password" />
+                                <button type="submit" class="logreg__submit form__submit button button_blue button_big" lang="ru">Войти</button>
+                                <button type="submit" class="logreg__submit form__submit button button_blue button_big" lang="eng">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="logreg__bottom" lang="ru">
+                        <span class="logreg__question">У Вас еще нет учетной записи?</span>
+                        <a href="#" class="logreg__link" data-logreg="switcher">Зарегестрироваться</a>
+                    </div>
+                    <div class="logreg__bottom" lang="eng">
+                        <span class="logreg__question">Don't you have an account yet?</span>
+                        <a href="#" class="logreg__link" data-logreg="switcher">Register</a>
+                    </div>
+                </div>
+
+                <div class="logreg__container">
+                    <div class="logreg__top">
+                        <span class="logreg__logo logo" lang="ru">Messagebots - Регистрация</span>
+                        <span class="logreg__logo logo" lang="eng">Messagebots - Registration</span>
+                        <form action="POST" class="logreg__form form">
+                            <div class="logreg__form-wrap">
+                                <div class="logreg__input-wrap">
+                                    <div class="selling__wrong form__wrong form__wrong_mail" data-lang="Not correct e-mail">Не корректный e-mail</div>
+                                    <input type="text" class="logreg__name form__mail" placeholder="Введите почту" data-lang="Input e-mail" />
+                                </div>
+                                <input type="password" class="logreg__password" placeholder="Введите пароль" data-lang="Enter password" />
+                                <input type="password" class="logreg__password" placeholder="Повторите пароль" data-lang="Repeat password" />
+                                <button type="submit" class="logreg__submit form__submit button button_blue button_big" lang="ru">
+                                    Зарегестрироваться
+                                </button>
+                                <button type="submit" class="logreg__submit form__submit button button_blue button_big" lang="eng">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="logreg__bottom" lang="ru">
+                        <span class="logreg__question">Уже есть учетная запись?</span>
+                        <a href="#" class="logreg__link" data-logreg="switcher">Войти</a>
+                    </div>
+                    <div class="logreg__bottom" lang="eng">
+                        <span class="logreg__question">Уже есть учетная запись?</span>
+                        <a href="#" class="logreg__link" data-logreg="switcher">Войти</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terms">
+                <div class="terms__container">
+                    <h2 class="terms__header header-1" lang="ru">Соглашение о персональных данных</h2>
+                    <h2 class="terms__header header-1" lang="eng">Personal data agreement</h2>
+                    <div class="terms__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem accusantium vel. Veritatis ut, expedita maiores
+                        sed ullam at veniam neque fugiat? Quibusdam nihil, vel autem possimus id, commodi laboriosam officiis, accusamus eius voluptas
+                        laborum dignissimos quod rerum? At nobis aspernatur voluptatibus aliquam ea tenetur! Similique, vero fugiat? Qui quis
+                        accusantium quod nulla a odit, soluta laudantium culpa dolor perferendis maiores modi enim facilis repudiandae dignissimos
+                        voluptatibus quo corrupti eveniet obcaecati ipsa placeat cum perspiciatis numquam! Id natus eaque voluptatem laudantium
+                        voluptatibus assumenda nisi corrupti possimus dolorum. Quasi officiis exercitationem eaque nesciunt at est, saepe ex mollitia
+                        atque ipsam quisquam aperiam praesentium odit molestiae voluptate modi molestias voluptates? Totam, vel laudantium. A officia
+                        maxime corrupti natus facere eveniet culpa. Quaerat tenetur eos facere error, impedit, fugit nobis quos provident molestias
+                        hic nostrum nisi distinctio necessitatibus. Exercitationem cum necessitatibus laboriosam. Blanditiis, ratione, ad veritatis
+                        vitae inventore ipsam aliquam suscipit dicta optio, placeat nobis eveniet repudiandae. Voluptates aspernatur facilis odio,
+                        numquam fuga voluptate ducimus iste est omnis ullam ratione rem officiis sit libero molestias optio mollitia reiciendis illo
+                        voluptatum eaque, debitis iusto. Eum illum dignissimos est, omnis mollitia ratione blanditiis praesentium quam dolore,
+                        voluptate error! Odio provident, voluptates in dolore aliquid vel voluptas fugiat, molestiae dolor eaque a ipsa nobis corrupti
+                        non dolorum dolorem. Iusto minima tempore tempora architecto sequi, assumenda perferendis. Nam molestiae corrupti odio nostrum
+                        pariatur! Aperiam impedit, voluptas perspiciatis perferendis voluptatibus natus voluptatem possimus molestias optio nobis,
+                        illo explicabo enim eligendi ad incidunt. Ab saepe beatae totam porro. Placeat, nam officiis quae voluptate reprehenderit
+                        animi saepe commodi sit architecto blanditiis accusamus exercitationem doloremque iure laudantium deleniti sapiente. Quasi
+                        voluptate, accusamus quaerat laborum vel maxime fugiat autem dolorem reiciendis. Nostrum velit ullam placeat vel maiores quo
+                        enim hic amet deleniti rerum facere asperiores aliquam sint suscipit assumenda illum quasi natus, sequi ipsa nulla. Illum ex
+                        libero quam quis totam accusamus quod quibusdam? Nobis cupiditate dicta nemo dolorum. Quae, maiores obcaecati. Ipsa suscipit
+                        neque aperiam, quae delectus pariatur optio doloribus fuga consequuntur fugiat, dolorum aspernatur quam vitae asperiores
+                        maxime placeat. Repellendus labore rem ullam repellat assumenda eaque nulla vel sed eius eos. Fugiat officia magnam voluptates
+                        obcaecati enim. Corrupti eum quasi praesentium provident porro sit molestiae laborum alias cum voluptatem at, totam quia
+                        debitis perspiciatis deserunt distinctio animi? Eum excepturi sed expedita maiores consectetur animi similique minus veritatis
+                        voluptate vel at qui reprehenderit ullam non vitae odit quam minima eaque, natus voluptates consequatur. Quasi, neque?
+                        Laboriosam itaque enim, distinctio perferendis officiis architecto ex totam recusandae ipsam iste ipsa sit ratione inventore!
+                        Sapiente, voluptatibus repellendus saepe mollitia optio cum dolore, reprehenderit doloribus ducimus deleniti itaque ullam
+                        quisquam, doloremque ad. Vitae quis, incidunt nisi rerum dolorum debitis. Accusantium ullam aspernatur delectus praesentium
+                        necessitatibus nisi animi nobis dolor, suscipit illo veniam ut, iusto ad sint cum quod iste ipsa libero quidem. Soluta neque
+                        magni animi quod at dolore velit aliquam totam incidunt est consequatur autem dolores quisquam facilis, ducimus nesciunt atque
+                        nostrum vitae quasi? Hic nam amet eaque perspiciatis debitis ut ad, rem commodi!
+                    </div>
+                </div>
+            </section>
+
+            <section class="welcome">
+                <div class="welcome__wrapper">
+                    <div class="welcome__selling selling">
+                        <h1 class="selling__header" lang="ru">Высокий уровень <br />вовлечения <br />представителей</h1>
+                        <h1 class="selling__header" lang="eng">High level <br />involvement <br />representatives</h1>
+                        <form action="post" class="selling__form form">
+                            <div class="selling__form-wrap">
+                                <div class="selling__input-wrap">
+                                    <div class="selling__wrong form__wrong form__wrong_mail" data-lang="Not correct e-mail">Не корректный e-mail</div>
+                                    <input type="mail" class="selling__mail form__mail" placeholder="Введите свой e-mail" data-lang="Input e-mail" />
+                                    <button type="submit" class="selling__submit form__submit button button_big" lang="ru">Отправить</button>
+                                    <button type="submit" class="selling__submit form__submit button button_big" lang="eng">Send</button>
+                                </div>
+
+                                <div class="selling__personal" lang="ru">
+                                    Нажимая на кнопку вы соглашаетесь на обработку <br />
+                                    <a href="#" class="selling__personal-link" data-modal="terms">персональных данных</a>
+                                </div>
+                                <div class="selling__personal" lang="eng">
+                                    By clicking on the button, you agree to process <br />
+                                    <a href="#" class="selling__personal-link" data-modal="terms">personal data</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="welcome__wrap-img ibg" data-ibg="url('./src/img/Saly-1.png') center center / contain no-repeat"></div>
+                    <a href="#" class="welcome__next" data-link="benefits" lang="ru">Листайте дальше</a>
+                    <a href="#" class="welcome__next" data-link="benefits" lang="eng">Sweep on</a>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <div class="benefits__header header-1" lang="ru">Наши преимущества</div>
+                <div class="benefits__header header-1" lang="eng">Our advantages</div>
+                <ul class="benefits__list" lang="ru">
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-1.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">Увеличиваем продажи</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            Создавайте воронки продаж в мессенджерах. Открываемость и клики в ваших рассылках будут до 3-7 раз выше, чем в электронной
+                            почте. Больше отклик — больше продаж.
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-2.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">Усиливаем маркетинг</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            Мессенджеры — это интерактивный канал общения с аудиторией. Чат-боты могут запросить любую информацию от клиентов, чтобы
+                            сегментировать их для отдела продаж и предлагать более релевантные продукты.
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-3.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">Оптимизируем поддержку</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            Принцип «одного окна» для общения с аудиторией, а также ответы на однотипные вопросы с помощью чат-бота экономят время
+                            сотрудников и деньги предпринимателя.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="benefits__list" lang="eng">
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-1.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">We increase sales</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            Create sales funnels in messengers.Openness and clicks in your mailings will be up to 3-7 times higher than in electronic
+                            mail.More response - more sales.
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-2.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">We strengthen marketing</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            Messengers are an interactive channel of communication with the audience.Chat bots can request any information from
+                            customers to Segment them for the sales department and offer more relevant products.
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__title">
+                            <div class="benefits__img-wrap">
+                                <img src="./src/img/smile-3.png" alt="icon" class="benefits__img" />
+                            </div>
+                            <h3 class="benefits__title-text">We optimize support</h3>
+                        </div>
+                        <div class="benefits__desc">
+                            The principle of “one window” to communicate with the audience, as well as answers to the same type of questions using a
+                            chatbot save time employees and money of the entrepreneur.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="howworking">
+                <div class="howworking__wrapper">
+                    <h2 class="howworking__header header-1" lang="ru">Как мы работаем</h2>
+                    <h2 class="howworking__header header-1" lang="eng">How we are working</h2>
+                    <div class="howworking__container">
+                        <div class="howworking__img-wrap"></div>
+                        <div class="howworking__content">
+                            <ul class="howworking__breadcrumbs">
+                                <li class="howworking__breadcrumbs-item howworking__breadcrumbs-item_active">
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="0" lang="ru">Шаг 1</a>
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="0" lang="eng">Step 1</a>
+                                </li>
+                                <li class="howworking__breadcrumbs-item">
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="1" lang="ru">Шаг 2</a>
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="1" lang="eng">Step 2</a>
+                                </li>
+                                <li class="howworking__breadcrumbs-item">
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="2" lang="ru">Шаг 3</a>
+                                    <a href="#" class="howworking__breadcrumbs-link" data-tabs="2" lang="eng">Step 3</a>
+                                </li>
+                            </ul>
+                            <ul class="howworking__tabs">
+                                <li class="howworking__tabs-item">
+                                    <h2 class="howworking__content-header header-1" lang="ru">Используйте конструктор</h2>
+                                    <h2 class="howworking__content-header header-1" lang="eng">Use the designer</h2>
+                                    <div class="howworking__content-desc" lang="ru">Простой и легкий в освоении</div>
+                                    <div class="howworking__content-desc" lang="eng">Simple and easy to master</div>
+                                    <div class="howworking__content-text" lang="ru">
+                                        <p class="howworking__content-prgrph">
+                                            В нашем визуальном редакторе вы можете создать практически любой сценарий чат-бота без навыков
+                                            программирования.
+                                        </p>
+                                    </div>
+                                    <div class="howworking__content-text" lang="eng">
+                                        <p class="howworking__content-prgrph">
+                                            In our visual editor, you can create almost any chatbot scenario without skills programming.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="howworking__tabs-item">
+                                    <h2 class="howworking__content-header header-1" lang="ru">Подключите мессенджеры</h2>
+                                    <h2 class="howworking__content-header header-1" lang="eng">Connect messengers</h2>
+                                    <div class="howworking__content-desc" lang="ru">Поддерживаем все популярные мессенджеры</div>
+                                    <div class="howworking__content-desc" lang="eng">We support all popular messengers</div>
+                                    <div class="howworking__content-text" lang="ru">
+                                        <p class="howworking__content-prgrph">
+                                            В несколько кликов добавьте созданный чат-бот в желаемые мессенджеры. Один бот работает сразу во всех
+                                            доступных в конструкторе мессенджерах.
+                                        </p>
+                                    </div>
+                                    <div class="howworking__content-text" lang="eng">
+                                        <p class="howworking__content-prgrph">
+                                            In several clicks, add the created chatbot to the desired messengers.One bot works at once in all
+                                            affordable messengers in the designer.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="howworking__tabs-item">
+                                    <h2 class="howworking__content-header header-1" lang="ru">Привлекайте аудиторию</h2>
+                                    <h2 class="howworking__content-header header-1" lang="eng">Attract the audience</h2>
+                                    <div class="howworking__content-desc" lang="ru">И экономьте свое время</div>
+                                    <div class="howworking__content-desc" lang="eng">And save your time</div>
+                                    <div class="howworking__content-text" lang="ru">
+                                        <p class="howworking__content-prgrph">
+                                            Чат-боты будут вовлекать аудиторию и продавать ваши продукты. Отправляйте подписчикам рассылки и личные
+                                            сообщения в мессенджеры.
+                                        </p>
+                                    </div>
+                                    <div class="howworking__content-text" lang="eng">
+                                        <p class="howworking__content-prgrph">
+                                            Chat bots will involve the audience and sell your products.Send the mailing list to subscribers and
+                                            personal messages to messengers.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="howworking__button button button_blue" data-link="feedback" lang="ru">Забронировать звонок</a>
+                            <a href="#" class="howworking__button button button_blue" data-link="feedback" lang="eng">Book a call</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ourrates">
+                <h2 class="ourrates__header header-1" lang="ru">Наши тарифы</h2>
+                <h2 class="ourrates__header header-1" lang="eng">Our tariffs</h2>
+                <ul class="ourrates__list" lang="ru">
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Пробный</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">0 руб</span>
+                            <span class="ourrates__duration">/неделя</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Автоматизация ответов</li>
+                            <li class="ourrates__benefits-item">Сегментация аудитории и отправка релевантных сообщений для максимального отклика</li>
+                            <li class="ourrates__benefits-item">Анализ активной аудитории и статистика в админ-панели</li>
+                            <li class="ourrates__benefits-item">Интеграция с Вашей CRM-системой</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">Узнать больше</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Эконом</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">2 990 руб</span>
+                            <span class="ourrates__duration">/месяц</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Автоматизация ответов</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Сегментация аудитории и отправка релевантных сообщений для максимального отклика
+                            </li>
+                            <li class="ourrates__benefits-item">Анализ активной аудитории и статистика в админ-панели</li>
+                            <li class="ourrates__benefits-item">Интеграция с Вашей CRM-системой</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">Узнать больше</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Стандарт</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">3 990 руб</span>
+                            <span class="ourrates__duration">/месяц</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Автоматизация ответов</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Сегментация аудитории и отправка релевантных сообщений для максимального отклика
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Анализ активной аудитории и статистика в админ-панели
+                            </li>
+                            <li class="ourrates__benefits-item">Интеграция с Вашей CRM-системой</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">Узнать больше</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Премиум</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">5 990 руб</span>
+                            <span class="ourrates__duration">/месяц</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Автоматизация ответов</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Сегментация аудитории и отправка релевантных сообщений для максимального отклика
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Анализ активной аудитории и статистика в админ-панели
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Интеграция с Вашей CRM-системой</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">Узнать больше</a>
+                    </li>
+                </ul>
+
+                <ul class="ourrates__list" lang="eng">
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Trial</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">$ 0</span>
+                            <span class="ourrates__duration">/week</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Automation of answers</li>
+                            <li class="ourrates__benefits-item">Audience segmentation and sending of relevant messages for the maximum response</li>
+                            <li class="ourrates__benefits-item">Analysis of the active audience and statistics in the admin panels</li>
+                            <li class="ourrates__benefits-item">Integration with your CRM system</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">To learn more</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Economy</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">$ 40</span>
+                            <span class="ourrates__duration">/month</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Automation of answers</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Audience segmentation and sending of relevant messages for the maximum response
+                            </li>
+                            <li class="ourrates__benefits-item">Analysis of the active audience and statistics in the admin panels</li>
+                            <li class="ourrates__benefits-item">Integration with your CRM system</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">To learn more</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Standard</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">$ 55</span>
+                            <span class="ourrates__duration">/month</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Automation of answers</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Audience segmentation and sending of relevant messages for the maximum response
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Analysis of the active audience and statistics in the admin panels
+                            </li>
+                            <li class="ourrates__benefits-item">Integration with your CRM system</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">To learn more</a>
+                    </li>
+                    <li class="ourrates__item">
+                        <div class="ourrates__ratename">Premium</div>
+                        <div class="ourrates__price">
+                            <span class="ourrates__cost">$ 85</span>
+                            <span class="ourrates__duration">/month</span>
+                        </div>
+                        <ul class="ourrates__benefits-list">
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Automation of answers</li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Audience segmentation and sending of relevant messages for the maximum response
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">
+                                Analysis of the active audience and statistics in the admin panels
+                            </li>
+                            <li class="ourrates__benefits-item ourrates__benefits-item_include">Integration with your CRM system</li>
+                        </ul>
+                        <a href="#" class="ourrates__button button" data-link="feedback">To learn more</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__wrapper">
+                    <h2 class="reviews__header header-1" lang="ru">Отзывы</h2>
+                    <h2 class="reviews__header header-1" lang="eng">Reviews</h2>
+                    <ul class="reviews__list">
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__pic">
+                                    <img src="./src/img/cat-1.jpg" alt="cat" class="review__pic-img" />
+                                </div>
+                                <div class="review__name" lang="ru">Кот Михаил</div>
+                                <div class="review__name" lang="eng">Cat Michael</div>
+                                <div class="review__date">12.07.2021</div>
+                            </div>
+                            <div class="review__text" lang="ru">
+                                Очень понятный конструктор. Настроили все очень быстро. Служба поддержки реагирует моментально.
+                            </div>
+                            <div class="review__text" lang="eng">
+                                A very understandable designer.They set up everything very quickly. The support service reacts instantly.
+                            </div>
+                            <ul class="review__stars stars">
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                            </ul>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__pic">
+                                    <img src="./src/img/cat-2.jpg" alt="cat" class="review__pic-img" />
+                                </div>
+                                <div class="review__name" lang="ru">Кот Иксуайэш-13</div>
+                                <div class="review__name" lang="eng">Cat Xysh-13</div>
+                                <div class="review__date">01.01.2027</div>
+                            </div>
+                            <div class="review__text" lang="ru">
+                                Мессаджботы стали самым популярным конструктором в мире. Использует искуственный интелект, который превосходно
+                                общается с клиентами. Рекомендую не только пользоваться их услугами, но и акций прикупить!
+                            </div>
+                            <div class="review__text" lang="eng">
+                                Messagebots have become the most popular designer in the world.Uses artificial intelligence, which is excellent
+                                communicates with clients.I recommend not only to use their services, but also to buy shares!
+                            </div>
+                            <ul class="review__stars stars">
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                            </ul>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__pic">
+                                    <img src="./src/img/cat-3.jpg" alt="cat" class="review__pic-img" />
+                                </div>
+                                <div class="review__name" lang="ru">Кот Олег</div>
+                                <div class="review__name" lang="eng">Cat Oleg</div>
+                                <div class="review__date">03.06.2021</div>
+                            </div>
+                            <div class="review__text" lang="ru">
+                                Все работает! Но я думал что количество заявок увеличится в петяро, а увеличилось только в четыре раза
+                            </div>
+                            <div class="review__text" lang="eng">
+                                Everything is working!But I thought that the number of applications would increase in Petyaro, and only increased four
+                                times
+                            </div>
+                            <ul class="review__stars stars">
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item"></li>
+                            </ul>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__pic">
+                                    <img src="./src/img/cat-4.jpg" alt="cat" class="review__pic-img" />
+                                </div>
+                                <div class="review__name" lang="ru">Кот Бегемот</div>
+                                <div class="review__name" lang="eng">Cat Bethemot</div>
+                                <div class="review__date">03.06.1936</div>
+                            </div>
+                            <div class="review__text" lang="ru">Теперь собирать гостей на бал в сто раз проще!!!</div>
+                            <div class="review__text" lang="eng">Now gather guests for the ball is a hundred times easier !!!</div>
+                            <ul class="review__stars stars">
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                                <li class="stars__item stars__item_yes"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="reviews__button button button_big" lang="ru">Структурировать котиков</button>
+                    <button class="reviews__button button button_big" lang="eng">Structure cats</button>
+                </div>
+            </section>
+
+            <section class="sale">
+                <div class="sale__wrap-img"></div>
+                <div class="sale__selling selling">
+                    <h1 class="selling__header" lang="ru">Получите самую <br />выгодную цену <br />на планете</h1>
+                    <h1 class="selling__header" lang="eng">Get the most <br />favorable price <br />on the plan</h1>
+                    <form action="post" class="selling__form form">
+                        <div class="selling__form-wrap">
+                            <div class="selling__input-wrap selling__input-wrap_gray">
+                                <div class="selling__wrong form__wrong form__wrong_mail" data-lang="Not correct e-mail">Не корректный e-mail</div>
+                                <input type="mail" class="selling__mail form__mail" placeholder="Введите свой e-mail" data-lang="Input e-mail" />
+                                <button type="submit" class="selling__submit form__submit button button_big" lang="ru">Отправить</button>
+                                <button type="submit" class="selling__submit form__submit button button_big" lang="eng">Send</button>
+                            </div>
+                            <div class="selling__personal" lang="ru">
+                                Нажимая на кнопку вы соглашаетесь на обработку <br />
+                                <a href="#" class="selling__personal-link" data-modal="terms">персональных данных</a>
+                            </div>
+                            <div class="selling__personal" lang="eng">
+                                By clicking on the button, you agree to process <br />
+                                <a href="#" class="selling__personal-link" data-modal="terms">personal data</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="questions">
+                <h2 class="questions__header header-1" lang="ru">Часто задаваемые вопросы</h2>
+                <h2 class="questions__header header-1" lang="eng">Frequently asked Questions</h2>
+                <ul class="questions__list" lang="ru">
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Есть ли скидки?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                Да. При оплате тарифов на 3, 6 и 12 периодов скидка будет 5%, 15% и 30%, соответственно. Есть нюанс, если Вы заходите
+                                сменить тариф на более дорогой, то действие тарифа закончится раньше оплаченного срока. Аналогично, если тариф
+                                дешевле, тогда оплаченной суммы хватит на больший срок. Перерасчет делается 1 раз в месяц.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Какие есть способы оплаты?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                Ежемесячную подписку можно оплатить с помощью банковской карты. Тарифы на 6 и 12 периодов дополнительно можно оплатить
+                                с помощью ЮМани, Вебмани и Киви кошелька.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Можно ли оплатить как юридическое лицо?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">Для юридических лиц доступны тарифы от Стандарта при оплате на период от полугода.</div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Могу ли я вернуть свой платеж?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                Если вы вносили предоплату за несколько периодов вперед, то вы можете вернуть оплату за неизрасходованные периоды.
+                                Платеж за текущий период не возвращается. Но у вас есть бесплатный период, чтобы все проверить перед покупкой.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="questions__list" lang="eng">
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Are there any discounts?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                Yes.When paying tariffs for 3, 6 and 12 periods, the discount will be 5%, 15%and 30%, respectively.There is a nuance
+                                if you come in Change the tariff for more expensive, the tariff action will end earlier than the paid term.Similarly,
+                                if the tariff Cheaper, then the amount paid is enough for a longer term.Recalculation is done once a month.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">What are the payment methods?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                A monthly subscription can be paid using a bank card.Tariffs for 6 and 12 periods can be additionally paid With the
+                                help of Human, webmuni and kiwi wallet.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Can I pay as a legal entity?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                For legal entities, tariffs from the standard when paying for a period of six months are available.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__item-header">
+                            <div class="questions__question header-1">Can I return my payment?</div>
+                            <div class="questions__plus"></div>
+                        </div>
+                        <div class="questions__text-wrap">
+                            <div class="questions__text">
+                                If you made an advance payment for several periods in advance, then you can return the payment for unspent periods.
+                                The payment for the current period is not returned.But you have a free period to check everything before buying.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="feedback">
+                <div class="feedback__block">
+                    <h2 class="feedback__header header-1" lang="ru">Обратная связь</h2>
+                    <h2 class="feedback__header header-1" lang="eng">Feedback</h2>
+                    <form method="POST" class="feedback__form form">
+                        <div class="feedback__form-wrap">
+                            <label class="feedback__label">
+                                <div class="feedback__text" lang="ru">
+                                    Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за
+                                    месяц с минимальными усилиями с вашей стороны
+                                </div>
+                                <div class="feedback__text" lang="eng">
+                                    Talk to one of our employees to find out how much we can get for you the target audience for month with minimal
+                                    efforts on your part
+                                </div>
+                                <div class="feedback__input-wrap">
+                                    <div class="selling__wrong form__wrong form__wrong_mail" data-lang="Not correct e-mail">Не корректный e-mail</div>
+                                    <input
+                                        type="mail"
+                                        class="feedback__mail form__mail feedback__input"
+                                        placeholder="Введите свой e-mail"
+                                        data-lang="Input e-mail"
+                                    />
+                                </div>
+                                <div class="feedback__input-wrap">
+                                    <div class="selling__wrong form__wrong form__wrong_tel" data-lang="Incorrect telephone">
+                                        Не корректный телефон
+                                    </div>
+                                    <input
+                                        type="tel"
+                                        class="feedback__tel form__tel feedback__input"
+                                        placeholder="Номер мобильного телефона"
+                                        data-lang="Input phone number"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    class="feedback__nickname feedback__input"
+                                    placeholder="Никнейм в Instagram"
+                                    data-lang="Nickname"
+                                />
+                                <textarea
+                                    class="feedback__question feedback__input"
+                                    placeholder="Что вы бы хотели спросить о росте в Instagram"
+                                    data-lang="What would you like to ask about growth on Instagram"
+                                ></textarea>
+                            </label>
+                            <button type="submit" class="feedback__submit form__submit button button_blue button_big" lang="ru">
+                                Отправить заявку
+                            </button>
+                            <button type="submit" class="feedback__submit form__submit button button_blue button_big" lang="eng">
+                                Send an application
+                            </button>
+                            <div class="feedback__personal" lang="ru">
+                                Нажимая на кнопку вы соглашаетесь на обработку <br /><a href="#" class="feedback__personal-link" data-modal="terms"
+                                    >персональных данных</a
+                                >
+                            </div>
+                            <div class="feedback__personal" lang="eng">
+                                By clicking on the button, you agree to process <br /><a href="#" class="feedback__personal-link" data-modal="terms"
+                                    >personal data</a
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="feedback__block feedback__image"></div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__copy">
+                    <div class="footer__logo">Messagebots</div>
+                    <div class="footer__copyright" lang="ru">© 2022 Страница сделана в учебных целях.</div>
+                    <div class="footer__copyright" lang="eng">© 2022 The page is made for educational purposes.</div>
+                </div>
+                <div class="footer__up">
+                    <a href="#" class="footer__up-link" data-link="welcome" lang="ru">Вернуться наверх</a>
+                    <a href="#" class="footer__up-link" data-link="welcome" lang="eng">Return</a>
+                    <div class="footer__up-arrow"></div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,316 @@
+.menu {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+    margin-right: 16px;
+    position: relative;
+    
+    &__line {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-75%,-50%);
+        transform-origin: center;
+        width: 12px;
+        height: 0;
+        border-radius: 1px;
+        border: 1px solid #4754EB;
+        background-color: #4754EB;
+        transition: all 0.3s;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: -7px;
+            width: 18px;
+            height: 0;
+            border-radius: 1px;
+            border: 1px solid #4754EB;
+            background-color: #4754EB;
+            transform: scale(1);
+            transition: all 0.2s;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: 5px;
+            width: 12px;
+            height: 0;
+            border-radius: 1px;
+            border: 1px solid #4754EB;
+            background-color: #4754EB;
+            transition: all 0.3s;
+        }
+    }
+
+    @media (max-width:$width-4) {
+        width: 32px;
+        height: 32px;
+    }
+
+    &_active &__line {
+        &::before {
+            transform: scale(0);
+        }
+        width: 28px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        &::after {
+            width: 28px;
+            top:-1px;
+            left:-1px;
+            transform-origin: center;
+            transform: rotate(90deg);
+        }
+        @media (max-width:$width-4) {
+            width: 24px;
+            &::after {
+                width: 24px;
+            }
+        }
+    }
+}
+.logo {
+    font-size: 18px;
+    line-height: 135%;
+    color: #4754EB;
+    transition: all 0.2s;
+    &:hover {
+        text-shadow: 0 5px 5px rgba(80, 93, 236, 0.25);
+        transform: translateY(-2px);
+    }
+    @media (max-width:$width-4) {
+        font-size: 14px;
+    }
+}
+.nav {
+    display: flex;
+    &__list {
+        display: flex;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+        }
+        transition: all 0.2s;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        &:hover {
+            color: #4754EB;
+            text-shadow: 0 5px 5px rgba(80, 93, 236, 0.25);
+            transform: translateY(-2px);
+        }
+    }
+
+    @media (max-width:$width-2) {
+        position: fixed;
+        flex-direction: column;
+        top: -100%;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 120px 20px 0;
+        transition: all 0.6s;
+        overflow: auto;
+
+        &__list {
+            display: block;
+            z-index: 1;
+            margin-bottom: auto;
+        }
+
+        &__item {
+            margin-bottom: 24px;
+            z-index: 1;
+        }
+
+        &__link {
+            font-size: 56px;
+            line-height: 125%;
+            z-index: 1;
+        }
+    }
+
+    @media (max-width:$width-3) {
+        &__link {
+            font-size: 36px;
+        }
+    }
+
+    &_active {
+        top: 0;
+    }
+}
+.lang {
+    display: flex;
+    &__item {
+        &:hover {
+            transform: translateY(-2px);
+        }
+        &::after {
+            content:"/";
+            margin: 0 2px;
+            font-size: 18px;
+            line-height: 135%;
+            color: #808080;
+        }
+        &:last-child::after {
+            content:"";
+            margin: 0;
+        }
+        transition: all 0.2s;
+        
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        transition: all 0.2s;
+        &:hover {
+            color: #4754EB;
+            text-shadow: 0 5px 5px rgba(80, 93, 236, 0.25);
+        }
+    }
+
+    &__item_active &__link {
+        color: #4754EB;
+    }
+
+    @media (max-width:$width-2) {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+
+        &__item::after {
+            font-size: 56px;
+        }
+        
+        &__link {
+            font-size: 56px;
+            line-height: 125%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    @media (max-width:$width-3) {
+        &__item::after {
+            font-size: 36px;
+        }
+        
+        &__link {
+            font-size: 36px;
+        }
+    }
+}
+
+
+
+.header {
+    background: #FFF;
+    padding: 16px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 9vh;
+    position: relative;
+    &::after {
+        z-index: 1;
+        display: none;
+        position: absolute;
+        content:"";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+    }
+
+    @media(max-width: $width-2) {
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        min-height: 10px;
+        background: #fff;
+
+        &::after {
+            display: block;
+        }
+    }
+
+    @media (max-width:$width-3) {
+        padding: 12px 19px;
+    }
+
+    &__menu {
+        display: none;
+        @media (max-width: $width-2) {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__nav {
+        margin-right: 16px;
+        @media (max-width:$width-1) {
+            margin-right: 48px;
+        }
+
+    }
+
+    &__lang {
+        position: relative;
+        margin-left: 76px;
+        z-index: 2;
+
+        @media (max-width:$width-2) {
+            margin-left: 0;
+        }
+    }
+
+    &__auth {
+        position: relative;
+        z-index: 2;
+        @media (max-width: $width-3) {
+            display: block;
+            padding: 0;
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: url("../src/img/auth_icon.svg") 52% center/40% no-repeat #505DEC;
+            &:hover {
+                padding: 0;
+                background: url("../src/img/auth_icon.svg") 52% center/40% no-repeat #505DEC;
+            }
+        }
+    }
+}

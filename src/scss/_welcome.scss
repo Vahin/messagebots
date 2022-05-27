@@ -1,0 +1,63 @@
+.welcome {
+    position: relative;
+    overflow: hidden;
+    background: url("../src/img/screen-1.jpg") center center / cover no-repeat;
+    &__wrapper {
+        padding: 16px 56px;
+        @media (max-width:$width-2) {
+            padding: 100px 19px 12px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: center; */
+        position: relative;
+        min-height: 88vh;
+    }
+    &__selling {
+        flex: 55;
+        @media (max-width: $width-2){
+            flex-basis: 100%;
+        } 
+    }
+
+    &__wrap-img {
+        flex: 45;
+        @media (max-width: $width-2){
+            flex-basis: 100%;
+            margin-top: -10%;
+            padding: 0 0 100% 0;
+        } 
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__next {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        left: 88px;
+        font-size: 16px;
+        color: #FFFFFF;
+        @media (max-width: $width-2) {
+            display: none;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -32px;
+            display: block;
+            width: 24px;
+            height: 32px;
+            background: url("../src/img/Wheeldown.svg") center center no-repeat;
+        }
+    }
+}
+
+@import "selling";

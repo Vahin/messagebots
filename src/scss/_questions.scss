@@ -1,0 +1,112 @@
+.questions {
+    background: url("../src/img/screen-4.jpg") center center / cover no-repeat;
+    padding: 80px 56px;
+    @media (max-width:$width-3) {
+        padding: 40px 20px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+        border-radius: 16px;
+        overflow: hidden;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_open {
+        }
+    }
+
+    &__item-header {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 28px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:$width-3) {
+            padding: 24px 16px;
+        }
+    }
+
+    &__question {
+    }
+
+    &__plus {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #fff;
+        position: relative;
+        box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+        transform-origin: center;
+        transition: all ease-in 0.3s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 28px;
+            height: 0;
+            border-bottom: 2px solid #000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 28px;
+            width: 0;
+            border-right: 2px solid #000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+
+        @media (max-width:$width-3) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__item_open &__plus {
+        transform: rotate(45deg);
+        &:hover {
+            transform: rotate(135deg);
+        }
+    }
+
+    &__text-wrap {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    &__text {
+        padding: 16px 24px;
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        @media (max-width:$width-3) {
+            font-size: 14px;
+        }
+    }
+
+    &__item_open {
+
+    }
+}

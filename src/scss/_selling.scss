@@ -1,0 +1,81 @@
+.selling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__header {
+        font-size: 56px;
+        line-height: 112%;
+        color: #1A1A1A;
+        margin-bottom: 40px;
+        @media (max-width: $width-3) {
+            font-size: 36px;
+            line-height: 125%;
+        }
+    }
+
+    &__form {
+    }
+
+    &__form-wrap {
+
+    }
+
+    &__input-wrap {
+        max-width: 465px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        padding: 8px;
+        margin-bottom: 16px;
+        &_gray {
+            background: #F2F2F2;
+        }
+    }
+
+    &__mail {
+        flex: 1 0 150px;
+        background: none;
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        margin: 10px 16px;
+    }
+
+    &__submit {
+        flex: 1 0 0;
+    }
+
+    &__personal {
+        font-size: 12px;
+        line-height: 135%;
+        color: #595959;
+    }
+
+    &__personal-link {
+        color: #505DEC;
+    }
+}
+
+.form__wrong {
+    position: absolute;
+    background: red;
+    padding: 7px;
+    bottom: 110%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate3d(1, 0, 0, -90deg);
+    border-radius: 5px;
+
+    font-size: 14px;
+    color: red;
+    background: rgba(255,255,255,0.8);
+    transition: transform 0.4s ease-in;
+    transform-origin: bottom center;
+}
+
+.form__wrong_show {
+    display:block;
+    transform: translate(-50%, 0) rotate3d(0, 0, 0, 0);
+}

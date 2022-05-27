@@ -1,0 +1,186 @@
+.howworking {
+    background: url("../src/img/screen-2.jpg") center center / cover no-repeat;
+    &__wrapper {
+        padding: 80px 56px 0;
+        @media (max-width: $width-3) {
+            padding: 40px 20px 0;
+        }
+    }
+
+    &__header {
+        margin-bottom: 41px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        @media (max-width: $width-2) {
+            flex-direction: column;
+        }
+    }
+
+    &__img-wrap {
+        flex: 1;
+        position: relative;
+        padding: 0 0 50% 0;
+        background: url("../src/img/Saly-24.png") center center / contain no-repeat;
+        margin-right: 24px;
+        @media (max-width: $width-2) {
+            margin-right: 0;
+            padding: 0 0 100% 0;
+            margin-bottom: 40px;
+        }
+        margin-top: 30px;
+    }
+
+    &__img {
+        position: absolute;
+        width: 80%;
+        object-fit: contain;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        z-index: 3;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__breadcrumbs {
+        display: flex;
+        margin-bottom: 30px;
+        @media (max-width: $width-3) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__breadcrumbs-item {
+        position: relative;
+        margin-left: 56px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 24px;
+            border-bottom: 2px solid #fff;
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+        }
+        @media (max-width: $width-3) {
+            margin-left: 32px;
+            &::before {
+                width: 16px;
+                left: -24px;
+            }
+        }
+
+        &_active {
+            &::before {
+                border-bottom: 2px solid #fff;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__breadcrumbs-link {
+        font-size: 18px;
+        line-height: 135%;
+        color: #ffffff;
+        transition: all 0.3s;
+        &:hover {
+            color: #4754eb;
+            text-shadow: 0 5px 5px rgba(80, 93, 236, 0.25);
+        }
+
+        @media (max-width: $width_2) {
+            color: #737ce0;
+            text-shadow: 0 5px 5px rgba(80, 93, 236, 0.25);
+        }
+
+        @media (max-width: $width-3) {
+            font-size: 14px;
+            line-height: 135%;
+        }
+    }
+
+    &__breadcrumbs-item_active &__breadcrumbs-link {
+        color: #4754eb;
+    }
+
+    &__content-header {
+        margin-bottom: 16px;
+        @media (max-width: $width-3) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__content-desc {
+        font-size: 18px;
+        line-height: 135%;
+        color: #4754eb;
+        margin-bottom: 24px;
+        @media (max-width: $width-3) {
+            margin-bottom: 16px;
+        }
+        @media (max-width: $width-3) {
+            font-size: 14px;
+            line-height: 135%;
+        }
+    }
+
+    &__content-text {
+        margin-bottom: 71px;
+        @media (max-width: $width-3) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__content-prgrph {
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        margin-bottom: 16px;
+        @media (max-width: $width-3) {
+            margin-bottom: 8px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        margin-bottom: 39px;
+    }
+
+    &__tabs {
+        max-height: 0;
+        position: relative;
+        overflow: hidden;
+        transition: min-height 0.5s ease-in;
+        @media (max-width: $width-2) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tabs-item {
+        opacity: 0;
+        transition: all 1s;
+        position: absolute;
+        top: -200%;
+        left: 0;
+    }
+
+    &__tabs-item_show {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+}

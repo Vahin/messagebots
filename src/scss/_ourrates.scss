@@ -1,0 +1,110 @@
+.ourrates {
+    padding: 80px 24px;
+    background: #FFFFFF;
+    @media (max-width:$width-3) {
+        padding: 40px 20px;
+    }
+    &__header {
+        margin-left: 56px;
+        margin-bottom: 40px;
+        @media (max-width:$width-3) {
+            margin-left: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 0 23%;
+        margin-bottom: 24px;
+        padding: 24px 20px;
+        background: rgba(150, 150, 150, 0.1);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        border-radius: 24px;
+        @media (max-width:$width-2) {
+            flex: 0 0 48%
+        }
+        @media (max-width:$width-3) {
+            flex: 0 0 100%;
+            padding: 15px;
+        }
+    }
+
+    &__ratename {
+        font-size: 24px;
+        line-height: 100%;
+        color: #1A1A1A;
+        margin-bottom: 8px;
+        @media (max-width:$width-3) {
+            font-size: 18px;
+            line-height: 125%;
+        }
+    }
+
+    &__price {
+        margin-bottom: 44px;
+        @media (max-width:$width-3) {
+            margin-bottom: 33px;
+        }
+    }
+
+    &__cost {
+        font-size: 24px;
+        line-height: 100%;
+        color: #4754EB;
+        @media (max-width:$width-3) {
+            font-size: 18px;
+            line-height: 125%;
+        }
+    }
+
+    &__duration {
+        font-size: 24px;
+        line-height: 100%;
+        color: #808080;
+        @media (max-width:$width-3) {
+            font-size: 18px;
+            line-height: 125%;
+        }
+    }
+
+    &__benefits-list {
+        margin-bottom: 16px;
+    }
+
+    &__benefits-item {
+        font-size: 24px;
+        line-height: 100%;
+        color: #808080;
+        margin-left: 48px;
+        margin-bottom: 16px;
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;   
+            position: absolute;
+            background: url("../src/img/Component 2.png") center center no-repeat;
+            top: 0;
+            left: -30px;
+        }
+        @media (max-width:$width-3) {
+            font-size: 18px;
+            line-height: 125%;
+        }
+
+        &_include::before {
+            background: url("../src/img/Component 1.png") center center no-repeat;
+        }
+    }
+
+    &__button {
+        display: block;
+        text-align: center;
+    }
+}

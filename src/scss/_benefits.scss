@@ -1,0 +1,87 @@
+.benefits {
+    padding: 80px 25px 80px;
+    background: #FFFFFF;
+    @media (max-width:$width-3) {
+        padding: 40px 8px;
+    }
+
+    &__header {
+        margin-left: 56px;
+        margin-bottom: 40px;
+        @media (max-width:$width-3) {
+            margin: 0 0 30px 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-left: -16px;
+        @media (max-width:$width-2) {
+            flex-direction: column;
+            margin-left: 0;
+        }
+    }
+
+    &__item {
+        flex: 1;
+        padding: 12px 24px;
+        margin-left: 16px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        backdrop-filter: blur(24px);
+        border-radius: 24px;
+        @media (max-width:$width-2) {
+            flex-direction: column;
+            margin-left: 0;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        @media (max-width:$width-3) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__img-wrap {
+        width: 40px;
+        height: 40px;
+        flex: 1;
+        margin-right: 12px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__title-text {
+        flex: 9;
+        font-size: 24px;
+        line-height: 100%;
+        color: #1A1A1A;
+        @media (max-width:$width-3) {
+            font-size: 18px;
+            line-height: 125%;
+        }
+    }
+
+    &__desc {
+        margin: 24px;
+        font-size: 18px;
+        line-height: 135%;
+        color: #808080;
+        @media (max-width:$width-3) {
+            font-size: 14px;
+            margin: 0 16px;
+        }
+    }
+}
+
