@@ -116,7 +116,7 @@ document.addEventListener("click", (event) => {
     }
 
     //-- Структурирование отзывов --//
-    if (event.target.closest(".reviews__button")) {
+    if (event.target.closest(".reviews__button") && document.querySelector(".reviews__button")) {
         setDefaultReviewsPosition(reviewsContainer, reviewsItem, reviewsActiveClass);
         document.querySelector(".reviews__button").remove();
     }
@@ -160,7 +160,7 @@ window.addEventListener("resize", (event) => {
         body.classList.add("body_lock");
     }
 
-    if (document.documentElement.offsetWidth > RESIZEWIDTH) {
+    if (document.documentElement.offsetWidth > RESIZEWIDTH && document.querySelector(".reviews__button")) {
         setDefaultReviewsClass(reviewsItem, reviewsActiveClass);
         document.querySelector(".reviews__button").remove();
     } else {
