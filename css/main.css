@@ -4,24 +4,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -32,7 +40,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -49,7 +59,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -65,29 +76,32 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Visuelt Pro';
-  src: url("./src/fonts/VisueltPro-Medium.eot");
-  src: local("VisueltPro-Medium"), url("./src/fonts/VisueltPro-Medium.eot?#iefix") format("embedded-opentype"), url("./src/fonts/VisueltPro-Medium.woff2") format("woff2"), url("./src/fonts/VisueltPro-Medium.woff") format("woff"), url("./src/fonts/VisueltPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Visuelt Pro';
-  src: url("./src/fonts/VisueltPro-Regular.eot");
-  src: local("VisueltPro-Regular"), url("./src/fonts/VisueltPro-Regular.eot?#iefix") format("embedded-opentype"), url("./src/fonts/VisueltPro-Regular.woff2") format("woff2"), url("./src/fonts/VisueltPro-Regular.woff") format("woff"), url("./src/fonts/VisueltPro-Regular.ttf") format("truetype");
+  font-family: "Visuelt Pro";
+  src: url("/src/fonts/VisueltPro-Regular.woff2"), url("/src/fonts/VisueltPro-Regular.woff"), url("/src/fonts/VisueltPro-Regular.ttf"), url("/src/fonts/VisueltPro-Regular.eot");
   font-weight: normal;
   font-style: normal;
 }
 
-body {
+@font-face {
   font-family: "Visuelt Pro";
+  src: url("/src/fonts/VisueltPro-Medium.woff2"), url("/src/fonts/VisueltPro-Medium.woff"), url("/src/fonts/VisueltPro-Medium.ttf"), url("/src/fonts/VisueltPro-Medium.eot");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Visuelt Pro", "sans-serif";
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -125,11 +139,11 @@ body {
 .button {
   display: inline-block;
   padding: 10px 24px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
   font-size: 18px;
   line-height: 135%;
-  color: #4754EB;
+  color: #4754eb;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -142,12 +156,12 @@ body {
 }
 
 .button_blue {
-  background: #4754EB;
-  color: #FFFFFF;
+  background: #4754eb;
+  color: #ffffff;
 }
 
 .button_blue:hover {
-  background: #505DEC;
+  background: #505dec;
 }
 
 .button_big {
@@ -161,7 +175,7 @@ body {
 .header-1 {
   font-size: 36px;
   line-height: 112%;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 @media (max-width: 720px) {
