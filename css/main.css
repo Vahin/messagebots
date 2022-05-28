@@ -88,14 +88,14 @@ h6 {
 
 @font-face {
   font-family: "Visuelt Pro";
-  src: url("/src/fonts/VisueltPro-Regular.woff2"), url("/src/fonts/VisueltPro-Regular.woff"), url("/src/fonts/VisueltPro-Regular.ttf"), url("/src/fonts/VisueltPro-Regular.eot");
+  src: url("../src/fonts/VisueltPro-Regular.woff2"), url("../src/fonts/VisueltPro-Regular.woff"), url("../src/fonts/VisueltPro-Regular.ttf"), url("../src/fonts/VisueltPro-Regular.eot");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Visuelt Pro";
-  src: url("/src/fonts/VisueltPro-Medium.woff2"), url("/src/fonts/VisueltPro-Medium.woff"), url("/src/fonts/VisueltPro-Medium.ttf"), url("/src/fonts/VisueltPro-Medium.eot");
+  src: url("../src/fonts/VisueltPro-Medium.woff2"), url("../src/fonts/VisueltPro-Medium.woff"), url("../src/fonts/VisueltPro-Medium.ttf"), url("../src/fonts/VisueltPro-Medium.eot");
   font-weight: 500;
   font-style: normal;
 }
